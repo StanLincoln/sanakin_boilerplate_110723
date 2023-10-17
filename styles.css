@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    border: none;
+}
+
+.sidebar-container {
+    width: 250px;
+    background: #FBF9F8;
+}
+
+.sidebar-container>img {
+    padding: 27px;
+}
+
+.navigation-container {
+    padding-left: 40px;
+}
+
+.navigation-container li {
+    margin-bottom: 27px;
+    display: flex;
+    align-items: center;
+}
+
+.navigation-container img {
+    margin-right: 16px;
+}
+
+.profile-container {
+    background: #F9F2EF;
+    padding: 30px;
+}
+
+.profile-container>div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.profile-container button {
+    border-radius: 8px;
+    background: #fff;
+    padding: 13px 27px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 250px repeat(3, 1fr);
+    grid-template-rows: 100px repeat(3, 1fr);
+    gap: 24px;
+}
+
+.sidebar-container {
+    grid-column: 1/2;
+}
+
+header {
+    grid-column: 2/5;
+    grid-row: 1/2;
+}
+
+.product-analytics.child1 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .product-analytics.child2 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  .product-analytics.child3 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .product-analytics.child4 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+  .product-actions.child1 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+  .product-actions.child2 {
+    grid-column: 3/4;
+    grid-row: 4/5;
+  }
+  
+  .product-actions {
+    border-radius: 9px;
+    background: #fff;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+  }
+  .product-analytics {
+    border-radius: 9px;
+    background: #fff;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+  }
+  .stock-summery {
+    border-radius: 9px;
+    background: #fff;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+    grid-column: 4/5;
+    grid-row: 2/5;
+  }
