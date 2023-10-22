@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css">
   </head>
   <body>
     <div class="grid-container">
@@ -18,11 +19,11 @@
         <img src="images/sidebar/sanakin_logo.svg" alt="sanakin_logo">
         <nav class="navigation-container">
           <ul>
-            <li><img src="images/sidebar/dashboard.svg" alt="dashboard"><span>Dashboard</span></li>
-            <li><img src="images/sidebar/product.svg" alt="product"><span>Product</span></li>
-            <li><img src="images/sidebar/orders.svg" alt="orders"><span>Orders</span></li>
-            <li><img src="images/sidebar/customers.svg" alt="customers"><span>Customers</span></li>
-            <li><img src="images/sidebar/cus-chat.svg" alt="cus-chat"><span>CusChat</span></li>
+            <li><i class="fa-solid fa-house"></i><span>Dashboard</span></li>
+            <li><i class="fa-regular fa-file-lines"></i><span>Product</span></li>
+            <li><i class="fa-regular fa-clipboard"></i><span>Orders</span></li>
+            <li><i class="fa-solid fa-user-group"></i><span>Customers</span></li>
+            <li><i class="fa-regular fa-comments"></i><span>CusChat</span></li>
           </ul>
         </nav>
         <div class="profile-container">
@@ -74,28 +75,37 @@
       </div>
       <div class="stock-summery">
         <h3>Stock Summery</h3>
-        <div>
-          <div>
-            <p>Added Stock</p>
-            <p>Available Stock</p>
-          </div>
-          <img src="images/dashboard/statistics.svg" alt="statistics">
+        <div class="statistic-container">
+            <div class="container-agenda">
+              <div>
+                <i id="added" class="fa-solid fa-square"></i>
+                <span>Added Stock</span>
+              </div>
+  
+              <div>
+                <i id="available" class="fa-solid fa-square"></i>
+                <span>Available Stock</span>
+              </div>
+            </div>
+          <div class="product-statistic-image-container">
+            <span>100%</span>
+            <img src="images/dashboard/statistics.svg" alt="statistics"></div>
         </div>
        <p>Low stock Products</p>
        <div>
-        <div>
+        <div class="remaining-product-container">
           <p>Product name</p>
           <p>Remaining 10%</p>
         </div>
-        <div>
+        <div class="remaining-product-container">
           <p>Product name</p>
           <p>Remaining 25%</p>
         </div>
-        <div>
+        <div class="remaining-product-container">
           <p>Product name</p>
           <p>Remaining 33%</p>
         </div>
-        <div>
+        <div class="remaining-product-container">
           <p>Product name</p>
           <p>Remaining 35%</p>
         </div>
